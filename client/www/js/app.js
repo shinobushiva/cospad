@@ -10,7 +10,7 @@
     });
 
     // インデックスページ
-    app.controller('Index', function($scope, Data) {
+    app.controller('Index2', function($scope, Data) {
         console.log($scope, Data, "index");
 
         $scope.requestTest = function (e) {
@@ -39,6 +39,13 @@
         };
 
     });
+
+    app.controller('page2-3', function($scope, Data) {
+
+		console.log("hello!");
+		$('#ui-tab > ul').tabs();
+
+	});
 
     // Page 1
     app.controller('Page1Ctrl', function($scope, Data) {

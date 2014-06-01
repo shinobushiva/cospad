@@ -1,0 +1,88 @@
+  <link rel="stylesheet" href="styles/styles.css"/> 
+
+<ons-page class="center">
+    <ons-navigator-toolbar title="CosPad"  right-button-icon="fa fa-lg fa-angle-right"
+                           on-right-button-click="ons.navigator.pushPage('page2-1.html')">
+    </ons-navigator-toolbar>
+     <div id='cssmenu'>
+</div>
+
+<!-- ↓ここからサンプル↓ -->
+<div class="tabchan">
+
+<div id="tab01">
+<div id="tab02">
+<div id="tab03">
+
+<!-- ↓タブ↓ -->
+     <div id='cssmenu'>
+<ul>
+   <li><a href="#tab01"><span>基本情報</span></a></li>
+   <li><a href="#tab02"><span>材料</span></a></li>
+   <li class='last'><a href="#tab03"><span>レシピ</span></a></li>
+</ul>
+</div>
+<!-- ↑タブ↑ -->
+
+<div class="contents">
+
+<!-- ↓タブ 1 の内容↓ -->
+<div class="tab01" id="form_container">
+	<form id="form_852978" method="post" action="">				
+		<label class="description" for="element_1">タイトル</label>
+		<div>
+			<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		<label class="description" for="element_3">写真</label>
+		<div>
+			<br>
+		</div> 
+		<label class="description" for="element_3">タグ</label>
+		<div>
+			<input id="element_3" name="element_3" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		<label class="description" for="element_2">概要</label>
+		<div>
+			<textarea id="element_2" name="element_2" class="element textarea medium"></textarea> 
+		</div>
+		<label class="description" for="element_4">材料費</label>
+		<div>
+			<input id="element_4" name="element_4" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		<label class="description" for="element_5">製作時間</label>
+		<div>
+			<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div>
+	    <input type="hidden" name="form_id" value="852978" />
+			    
+		<input id="saveForm" class="button_text" type="submit" name="submit" value="保存" />
+	</form>	
+</div>
+<!-- ↑タブ 1 の内容↑ -->
+
+<!-- ↓タブ 2 の内容↓ -->
+<div class="tab02">
+<section>
+</section>
+</div>
+<!-- ↑タブ 2 の内容↑ -->
+
+<!-- ↓タブ 3 の内容↓ -->
+<div class="tab03">
+<section>
+
+</section>
+</div>
+<!-- ↑タブ 3 の内容↑ -->
+
+<!-- .contents --></div>
+
+</div>
+</div>
+</div>
+
+<!-- .sample --></div>
+<!-- ↑ここまでサンプル↑ -->
+
+<br>
+</ons-page>
