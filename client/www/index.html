@@ -17,7 +17,7 @@
     specific language governing permissions and limitations
     under the License.
 -->
-<html>
+<html ng-app="cosPad">
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
@@ -28,13 +28,23 @@
         <link rel="stylesheet" href="vendor/onsenui/build/css/topcoat-mobile-onsen-ios7.css">
         <link rel="stylesheet" href="css/app.css" />
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="vendor/zepto/zepto.min.js"></script>
-        <script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+        <script type="text/javascript" src="vendor/zepto/zepto.js"></script>
+        <script type="text/javascript" src="vendor/angular/angular.js"></script>
         <script type="text/javascript" src="vendor/onsenui/build/js/onsenui.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
         <title>CosPad</title>
     </head>
     <body>
+    <ons-screen>
+        <ons-navigator title="CosPad">
 
+            <div class="center" ng-controller="Index">
+                <h1>aaa</h1>
+                <ons-button ng-click="ons.navigator.pushPage('page1.html')">Push Page 1</ons-button>
+                <ons-button ng-click="requestTest()">Request Test</ons-button>
+            </div>
+
+        </ons-navigator>
+    </ons-screen>
     </body>
 </html>
